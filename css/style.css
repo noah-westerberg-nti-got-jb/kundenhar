@@ -1,10 +1,28 @@
+
+*{
+    font-family: sans-serif;
+
+    --main-color: #8BC34A;
+}
+
 .wrapper {
     display: grid;
 
     grid-template-rows: 10vh 1fr 20vh;
 }
 
+body{
+    margin: 0px;
+}
+
+header{
+    border-bottom: 3px var(--main-color) solid;
+    background-color: rgb(205, 205, 205);
+}
+
 nav{
+    width: 93%;
+    
     display: flex;
 
     flex-direction: row;
@@ -13,13 +31,16 @@ nav{
 
     align-items: center;
 
-    gap: 20px;
+    gap: 30px;
 }
 
 footer{
     display: grid;
     
     grid-template-columns: 50vw 50vw;
+
+    border-top: 3px var(--main-color) solid;
+    background-color: rgb(205, 205, 205);
 }
 
 div.info, div.contact-info{
@@ -27,5 +48,9 @@ div.info, div.contact-info{
 }
 
 div.info{
+    text-align: center;
+}
+
+.center{
     text-align: center;
 }
