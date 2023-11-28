@@ -1,0 +1,31 @@
+.wrapper {
+    display: grid;
+
+    grid-template-rows: 10vh 1fr 20vh;
+}
+
+nav{
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+footer{
+    display: grid;
+    
+    grid-template-columns: 50vw 50vw;
+}
+
+div.info, div.contact-info{
+    margin: 30px;
+}
+
+div.info{
+    text-align: center;
+}
