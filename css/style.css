@@ -7,7 +7,7 @@
 .wrapper {
     display: grid;
 
-    grid-template-rows: 10vh 1fr 20vh;
+    grid-template-rows: 80px 1fr 150px;
 }
 
 body {
@@ -17,10 +17,15 @@ body {
 header {
     border-bottom: 3px var(--main-color) solid;
     background-color: rgb(205, 205, 205);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
 }
 
 nav {
-    width: 93%;
+    width: 100%;
 
     display: flex;
 
@@ -58,7 +63,7 @@ div.info {
 #shop {
     display: flex;
 
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
 
     padding-left: 15vw;
@@ -71,11 +76,23 @@ div.info {
 
     margin: 10px;
 
-    border: black solid 3px;
+    border: black solid 0.2rem;
 
     display: grid;
 
     grid-template-rows: 60% 40%;
+
+    background-color: white;
+
+    filter: grayscale(0.1);
+}
+
+.item-container p{
+    margin: 0px;
+}
+
+.item-container:hover{
+    filter: none;
 }
 
 .item-container-top {
@@ -83,7 +100,36 @@ div.info {
 }
 
 .item-container-bottom {
-    border-top: black solid 2px;
+    border-top: black solid 0.125rem;
 
-    padding: 3px;
+    padding: 0.3rem;
+}
+
+.price{
+    font-size: 3rem;
+    font-weight: bold;
+    
+    float: right;
+}
+
+.product-name{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+
+#home{
+    display: grid;
+
+    grid-template-rows: 100px 700px 500px;
+}
+
+#help{
+    height: 1fr;
+
+    padding: 7% 10%;
+
+    display: grid;
+    grid-template-columns: 60% 40%;
+
 }
