@@ -8,7 +8,7 @@
 }
 
 .glow:hover {
-    filter: contrast(1.1);
+    filter: contrast(1.2);
 }
 
 .main-color-text {
@@ -177,22 +177,21 @@ section.info {
 }
 
 #product-display-text {
-    color: rgb(111, 111, 111);
+    color: black;
 
     font-size: 1.5rem;
 
-    float: left;
-
-    margin-top: 500px;
-    margin-left: 10%;
-    margin-right: 50%;
+    position: absolute;
+    left: 100px;
+    top: 510px;
+    width: 400px;
 }
 
 #best-sellers {
     display: grid;
 
     grid-template-columns: 2fr 2fr;
-    grid-template-rows: 650px;
+    grid-template-rows: 80vh;
 }
 
 .best-seller {
@@ -236,4 +235,10 @@ h3#best-sellers-text {
     text-align: center;
 
     margin: 2px;
+}
+
+#item-showcase img{
+    min-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
