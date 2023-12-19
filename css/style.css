@@ -37,7 +37,7 @@ header {
 }
 
 nav {
-    width: 70%;
+    width: 57%;
 
     display: flex;
 
@@ -241,4 +241,16 @@ h3#best-sellers-text {
     min-width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+#help-list ul li{
+    margin-top: 2rem;
+}
+
+#title{
+    height: 80px;
+}
+
+#logo{
+    height: 80px;
 }
