@@ -3,6 +3,7 @@
 
     --main-color: #8BC34A;
     --secondary-color: #B04AC2;
+    --main-text-color: #244200;
 
     transition-duration: 0.5s;
 }
@@ -17,7 +18,7 @@
 
 .wrapper {
     width: 100%;
-    
+
     display: grid;
 
     grid-template-rows: 100px 1fr 150px;
@@ -25,7 +26,7 @@
     background-color: #a6bd8c;
 }
 
-body {    
+body {
     margin: 0px;
 
     background-color: rgb(205, 205, 205);
@@ -71,6 +72,8 @@ footer {
 section.info,
 section.contact-info {
     margin: 30px;
+
+    font-size: 1rem;
 }
 
 section.info {
@@ -129,7 +132,7 @@ section.info {
     background-color: var(--main-color);
 }
 
-.item-container-top img{
+.item-container-top img {
     min-width: 100%;
     max-height: 100%;
     height: auto;
@@ -146,17 +149,17 @@ section.info {
     position: relative;
 }
 
-.price{
+.price {
     position: absolute;
 
     bottom: 0;
-    right: 5%; 
+    right: 5%;
 }
 
 .price h4 {
     margin: 0px;
- 
-    font-size: 2.6rem;
+
+    font-size: 2.4rem;
     font-weight: bold;
 }
 
@@ -183,6 +186,8 @@ section.info {
 
     display: grid;
     grid-template-columns: 60% 40%;
+
+    color: var(--main-text-color);
 }
 
 #product-display-text {
@@ -191,9 +196,11 @@ section.info {
     font-size: 1.5rem;
 
     position: absolute;
-    left: 100px;
-    top: 510px;
-    width: 400px;
+    left: 4%;
+
+    bottom: 23%;
+
+    max-width: 30%;
 }
 
 #best-sellers {
@@ -219,11 +226,12 @@ section.info {
 }
 
 
-.best-seller img{
+.best-seller img {
     min-width: 100%;
     max-height: 100%;
     object-fit: cover;
 }
+
 #welcome {
     display: flex;
     align-items: center;
@@ -234,6 +242,8 @@ section.info {
     font-size: 4rem;
     font-weight: bold;
     margin: 0px;
+
+    color: var(--main-text-color);
 }
 
 h3#best-sellers-text {
@@ -244,22 +254,28 @@ h3#best-sellers-text {
     text-align: center;
 
     margin: 2px;
+    
+    color: var(--main-text-color);
 }
 
-#item-showcase img{
+#item-showcase{
+    position: relative;
+}
+
+#item-showcase img {
     min-width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-#help-list ul li{
+#help-list ul li {
     margin-top: 2rem;
 }
 
-#title{
+#title {
     height: 80px;
 }
 
-#logo{
+#logo {
     height: 80px;
 }
