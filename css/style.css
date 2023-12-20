@@ -16,15 +16,19 @@
 }
 
 .wrapper {
+    width: 100%;
+    
     display: grid;
 
     grid-template-rows: 100px 1fr 150px;
-}
-
-body {
-    margin: 0px;
 
     background-color: #a6bd8c;
+}
+
+body {    
+    margin: 0px;
+
+    background-color: rgb(205, 205, 205);
 }
 
 header {
@@ -111,9 +115,7 @@ section.info {
 .item-container:hover {
     filter: contrast(1.3);
 
-    margin: 2px;
-    width: 16vw;
-    height: 25vw;
+    transform: scale(1.05);
 }
 
 .product-info p {
@@ -140,15 +142,22 @@ section.info {
 
     display: grid;
     grid-template-rows: 20% 1fr 30%;
+
+    position: relative;
+}
+
+.price{
+    position: absolute;
+
+    bottom: 0;
+    right: 5%; 
 }
 
 .price h4 {
     margin: 0px;
-
-    font-size: 2.5rem;
+ 
+    font-size: 2.6rem;
     font-weight: bold;
-
-    text-align: right;
 }
 
 .product-name h3 {
